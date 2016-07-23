@@ -113,7 +113,7 @@ If you are using Active Geo-Replication as your recovery mechanism, [force a fai
 
 ### Perform a Geo-Restore 
 
-If you are using automated backups with geo-redundant storage replication as your recovery mechanism, [initiate a database recovery using Geo-Restore](sql-database-disaster-recovery.md#recover-using-geo-restore). Recovery will take place within 12 hours in most cases - with data loss of up to 1 hour determined by when the last hourly differential backup with takan and replicated. Until the recovery completes, the database will be unable to record any transactions or respond to any queries. 
+If you are using automated backups with geo-redundant storage replication as your recovery mechanism, [initiate a database recovery using Geo-Restore](sql-database-disaster-recovery.md#recover-using-geo-restore). Recovery will take place within 12 hours in most cases - with data loss of up to 1 hour determined by when the last hourly differential backup was taken and replicated. Until the recovery completes, the database will be unable to record any transactions or respond to any queries. 
 
 > [AZURE.NOTE] If the data center comes back online before you switch your application over to the recovered database, you can simply cancel the recovery.  
 
